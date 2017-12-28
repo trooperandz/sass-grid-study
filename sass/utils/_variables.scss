@@ -2,7 +2,8 @@
 $max-grid-percentage: 100%;
 $total-grid-columns: 12;
 $grid-width: 130rem;
-$gutter-width: 1.5rem;
+$container-padding: 1.7rem;  // Space between columns and edge of the screen
+$gutter-width: 1.5rem; // Space between columns
 
 // Media query breakpoints
 $screen-small-minimum: 768px;

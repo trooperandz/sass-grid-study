@@ -13,11 +13,14 @@ body {
   box-sizing: inherit; }
 
 .grid-container {
-  margin: 1.5rem; }
+  max-width: 130rem;
+  margin: 0 auto;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem; }
 
 .grid-row {
-  max-width: 130rem;
-  margin: 0 auto; }
+  margin-left: -1.7rem;
+  margin-right: -1.7rem; }
   .grid-row::after {
     content: "";
     display: table;
