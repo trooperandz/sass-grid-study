@@ -1,0 +1,19 @@
+html {
+  // Set base font = 10px (16px is standard browser) so that rem calculations are easy
+  font-size: 62.5%;
+}
+
+body {
+  // Include padding and border width in element calculations
+  box-sizing: border-box;
+  font-size: 1.6rem;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  // Not inheritable by default
+  box-sizing: inherit;
+}
