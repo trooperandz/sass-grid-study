@@ -21,64 +21,36 @@
 
 // For extra small screens
 @media (max-width: $screen-small-minimum) {
-  .columns-xs-6 {
-    width: calc(100% / 2);
-  }
-
-  .columns-xs-4 {
-    width: calc(100% / 3);
-  }
-
-  .columns-xs-3 {
-    width: calc(100% / 4);
+  @for $i from 1 through $total-grid-columns {
+    .columns-xs-#{$i} {
+      width: calc(#{$max-grid-percentage} / (#{$total-grid-columns} / #{$i}));
+    }
   }
 }
 
 // For small screens
 @media (min-width: $screen-small-minimum) {
-  .columns-sm-6 {
-    width: calc(100% / 2);
-  }
-
-  .columns-sm-4 {
-    width: calc(100% / 3);
-  }
-
-  .columns-sm-3 {
-    width: calc(100% / 4);
+  @for $i from 1 through $total-grid-columns {
+    .columns-sm-#{$i} {
+      width: calc(#{$max-grid-percentage} / (#{$total-grid-columns} / #{$i}));
+    }
   }
 }
 
 // For medium screens (tablet)
 @media (min-width: $screen-medium-minimum) {
-  .columns-md-6 {
-    width: calc(100% / 2);
-  }
-
-  .columns-md-4 {
-    width: calc(100% / 3);
-  }
-
-  .columns-md-3 {
-    width: calc(100% / 4);
+  @for $i from 1 through $total-grid-columns {
+    .columns-md-#{$i} {
+      width: calc(#{$max-grid-percentage} / (#{$total-grid-columns} / #{$i}));
+    }
   }
 }
 
 // For large screens (desktop)
 @media (min-width: $screen-large-minimum) {
-  .columns-lg-12 {
-    width: 100%;
-  }
-
-  .columns-lg-6 {
-    width: calc(100% / 2);
-  }
-
-  .columns-lg-4 {
-    width: calc(100% / 3);
-  }
-
-  .columns-lg-3 {
-    width: calc(100% / 4);
+  @for $i from 1 through $total-grid-columns {
+    .columns-lg-#{$i} {
+      width: calc(#{$max-grid-percentage} / (#{$total-grid-columns} / #{$i}));
+    }
   }
 }
